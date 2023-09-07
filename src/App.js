@@ -12,7 +12,7 @@ const App = () => {
   const [favourites, setFavourites] = useState([]);
   const [searchValue, setSearchValue] = useState("");
 
-  const getMovieRequest = async (searchValue) => {
+  const getMovieRequest = async (searchValue) => { 
     const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=aeb2b829`;
 
     const response = await fetch(url);
@@ -50,7 +50,7 @@ const App = () => {
   const removeFavouriteMovie = (movie) => {
     const newFavouriteList = favourites.filter(
       (favourite) => favourite.imdbID !== movie.imdbID
-    );
+    ); 
 
     setFavourites(newFavouriteList);
     saveToLocalStorage(newFavouriteList);

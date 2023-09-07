@@ -1,11 +1,11 @@
 import React from "react";
-import { CiSquareRemove } from "react-icons/ci";
+import { TiDelete } from "react-icons/ti";
 
 const RemoveFavourites = () => {
   return (
     <>
-      <span className="mr-2">Remove from favourites</span>
-      <CiSquareRemove />
+      <span className="mr-5">Remove from favourites</span>
+      <TiDelete />
     </>
   );
 };
